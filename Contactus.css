@@ -1,0 +1,256 @@
+*{
+	box-sizing: border-box;
+	margin:0px;
+}
+
+body{
+	background-color: #ffffea;
+}
+
+.top-container{
+
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #263A29;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+}
+
+
+.header{
+
+	padding-left: 50px;
+	padding-top: 10px;
+	width: 20%;
+	flex: 20%;
+
+}
+
+
+
+li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	transform: translatey(10px);
+}
+
+a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.nav{
+	
+	padding:10px;
+	margin-top: 10px;
+	width: 30%;
+
+}
+
+ul :hover{
+	color: #ffa600;
+}
+
+.search input[type=text]{
+
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 15px;
+	border: none;
+	width: 400px;
+
+}
+
+.search{
+
+	padding: 10px;
+	padding-left: 200px;
+	width: 10%;
+	flex: 20%;
+	transform: translateY(2px);
+	text-align: center;
+
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.left-side{
+
+	margin: 30px;
+	margin-right: 0;
+	padding: 20px;
+	flex: 30%;
+	font-family: 'Ysabeau', sans-serif;
+
+
+}
+
+.fa{
+	margin-left: 80px;
+    color: black;
+}
+
+.left-side h2{
+
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #263A29;
+
+}
+
+.left-side p.p{
+
+    text-align: justify;
+	color: darkslategray;
+	width: 500px;
+	margin-left: 80px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.left-side p.pp{
+
+    text-align: justify;
+	color: darkslategray;
+	width: 500px;
+	margin-left: 80px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.left-side h3{
+   
+    margin-left: 80px;
+
+}
+
+.left-side p.ppp{
+
+    text-align: justify;
+	color: darkslategray;
+	width: 500px;
+	margin-left: 80px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.left-side h2.h2h2{
+
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #263A29;
+    width: 500px;
+
+}
+
+
+.fullname input[type=text]{
+
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 15px;
+	border: solid black 1px;
+	width: 500px;
+    margin-top: 120px;
+    margin-right: 200px;
+	background-color: #ffffea;
+
+}
+
+.fullname{
+	padding: 10px;
+	padding-left: 200px;
+	width: 50%;
+	text-align: center;
+
+}
+
+.email input[type=text]{
+
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 15px;
+	border: solid black 1px;
+	width: 500px;
+    margin-top: 20px;
+    margin-right: 200px;
+	background-color: #ffffea;
+
+}
+
+.email{
+
+	padding: 10px;
+	padding-left: 200px;
+	width: 50%;
+	text-align: center;
+
+}
+
+.contact input[type=text]{
+
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 15px;
+	border: solid black 1px;
+	width: 500px;
+    margin-top: 20px;
+    margin-right: 200px;
+	background-color: #ffffea;
+
+}
+
+.contact{
+
+	padding: 10px;
+	padding-left: 200px;
+	width: 50%;
+	text-align: center;
+
+}
+
+.message input[type=text]{
+
+	border-radius: 15px;
+	font-size: 15px;
+	border: solid black 1px;
+	width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-right: 200px;
+	background-color: #ffffea;
+
+}
+
+
+.message{
+
+	padding: 10px;
+	padding-left: 200px;
+	width: 50%;
+	text-align: center;
+
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+	display: inline;
+	list-style-type: none;
+	padding: 20px;
+
+}
+
+footer{
+	background-color: #8ba0a4;
+	padding: auto;
+
+}
