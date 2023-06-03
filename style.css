@@ -139,17 +139,28 @@ ul :hover{
 #home-content .btn{
 	margin-left: 435px;
 	margin-top: 30px;
-	width: 150px;
-	height: 50px;
-	background: #263A29;
+	font-size: 20px;
+	border-radius: 5px;
+	background: #ffa600;
+	
 	
 }
 
 .btn :hover{
-	color: #ffa600;
+	color: black;
 }
 
 /*FURNITURE PAGE*/
+
+.furnitures-head{
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: 'Lucida Sans';
+	font-size: x-large;
+
+}
 
 .furniturenavpage{
 	scroll-snap-stop: normal;
@@ -164,9 +175,9 @@ ul :hover{
 }
 
 .classifications{
-	color: #AA5656;
+	color: black;
 	text-align: center;
-	font-size: x-large;
+	font-size: large;
 	margin: 30px;
 	margin-bottom: 0;
 	margin-top: 15px;
@@ -175,8 +186,6 @@ ul :hover{
 	padding-bottom: 0;
 
 }
-
-
 
 
 .furnitures{
@@ -199,18 +208,18 @@ ul :hover{
 	
 }
 
-.button {
-	background-color: #9CA777;
+.cart {
+	background-color: #ffa600;
 	color: black;
-	border-radius: 10px;
-	box-shadow: 5px -3px 6px gray;
+	padding: 5;
+	font-size: 10px;
+	border: none;
+	box-shadow: 0px 3px 5px;
 }
 
-
-.button:hover{
-	color: red;
+.cart:hover{
+	color: white;
 }
-
 
 
 .img{
@@ -220,10 +229,6 @@ ul :hover{
 	border-radius: 20px;
 	transition: 1s;
 }
-
-/*.furnitures .img3{
-	background-color: white;
-}*/
 
 
 .furnitures:hover .img{
@@ -253,9 +258,10 @@ ul :hover{
 
 .aboutus-head{
 
-	margin-top: 200px;
+	margin-top: 50px;
 	text-align: center;
 	font-family: 'Lucida Sans';
+	font-size: x-large;
 
 }
 
@@ -278,7 +284,7 @@ ul :hover{
 
 .aboutus-side h2.h2{
 
-	margin-top: 120px;
+	margin-top: 60px;
 	margin-left: 210px;
 	width: 30%;
 	text-align: justify;
@@ -331,11 +337,11 @@ ul :hover{
 .aboutus-side img{
 
 	margin-top: 70px;
-	margin-left: 200px;
+	margin-left: 270px;
 	border:black solid 1px ;
 	box-shadow: 5px -3px 6px gray;
-	height: 400px;
-	width: 600px;
+	height: 300px;
+	width: 400px;
 	
 }
 
@@ -389,23 +395,23 @@ ul :hover{
 .aboutus-main #main-first{
 
 	margin-right: 60px;
-	margin-left: 30px;
+	margin-left: 145px;
 	border:black solid 1px ;
 	box-shadow: 5px -3px 6px gray;
-	height: 400px;
-	width: 600px;
+	height: 300px;
+	width: 400px;
 
 }
 
 .aboutus-main #main-second{
 
-	margin-top: 100PX;
+	margin-top: 70PX;
 	margin-right: 50px;
-	margin-left: 30px;
+	margin-left: 145px;
 	border:black solid 1px ;
 	box-shadow: 5px -3px 6px gray;
-	height: 400px;
-	width: 600px;
+	height: 300px;
+	width: 400px;
 
 }
 
@@ -417,6 +423,15 @@ ul :hover{
 
 /* CONTACT US CSS */
 
+.contactus-head{
+
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Lucida Sans';
+	font-size: x-large;
+
+}
+
 .contactus-row{
 
 	display: flex;
@@ -426,7 +441,7 @@ ul :hover{
 
 .contactus-left-side{
 
-	margin: 30px;
+	margin-left: 30px;
 	margin-right: 0;
 	padding: 20px;
 	flex: 30%;
@@ -439,7 +454,7 @@ ul :hover{
 	padding-bottom: 20px;
 	font-size: 15px;
 	text-decoration: none;
-	color: #AA5656;
+	color: #263A29;
 	display: block;
 }
 
@@ -490,29 +505,27 @@ ul :hover{
 .contactus-left-side h2.h2h2{
 
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: 10px;
+	margin-bottom: 100px;
     color: #263A29;
     width: 500px;
 
 }
 
-/* .contactus-right-side{
-	background-color: rgb(248, 220, 183);
-} */
+.contactus-right-side {
+	margin-right: 200px;
+}
 
 .contactus-fullname input[type=text]{
 
 	padding: 8px;
 	border-radius: 15px;
 	font-size: 15px;
-	border: solid black 1px;
-	width: 500px;
+	width: 400px;
     margin-top: 120px;
     margin-right: 200px;
 	background-color: #ffffea;
-	border:black solid 1px ;
-	box-shadow: 5px -3px 6px gray;
-
+	border: solid black 1px;
 }
 
 
@@ -529,13 +542,11 @@ ul :hover{
 	padding: 8px;
 	border-radius: 15px;
 	font-size: 15px;
-	border: solid black 1px;
-	width: 500px;
+	width: 400px;
     margin-top: 20px;
     margin-right: 200px;
 	background-color: #ffffea;
-	border:black solid 1px ;
-	box-shadow: 5px -3px 6px gray;
+	border: solid black 1px;
 
 }
 
@@ -553,13 +564,11 @@ ul :hover{
 	padding: 8px;
 	border-radius: 15px;
 	font-size: 15px;
-	border: solid black 1px;
-	width: 500px;
+	width: 400px;
     margin-top: 20px;
     margin-right: 200px;
 	background-color: #ffffea;
-	border:black solid 1px ;
-	box-shadow: 5px -3px 6px gray;
+	border: solid black 1px;
 
 }
 
@@ -576,14 +585,12 @@ ul :hover{
 
 	border-radius: 15px;
 	font-size: 15px;
-	border: solid black 1px;
-	width: 500px;
-    height: 500px;
+	width: 400px;
+    height: 200px;
     margin-top: 20px;
     margin-right: 200px;
 	background-color: #ffffea;
-	border:black solid 1px ;
-	box-shadow: 5px -3px 6px gray;
+	border: solid black 1px;
 
 }
 
@@ -596,17 +603,33 @@ ul :hover{
 
 }
 
-/* BLOG CSS */
-
-.blog-top-container{
-	border: none;
-	background-image: url('sources/wp.png');
-	height: 200px;
-
+.submit {
+	margin-top: 20px;
+	border-radius: 5px;
+	font-size: 15px;
+	border: solid black 1px;
+	background-color: #ffa600;
+	color: black;
 }
 
+.submit:hover {
+	color: white;
+}
+
+/* BLOG CSS */
+
  .blogpage{
-    background-color: #E1D4BB;
+    background-color: #ffffea;
+}
+
+.blog-head{
+
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Lucida Sans';
+	font-size: x-large;
+
 }
 
 
@@ -642,6 +665,18 @@ ul :hover{
 
 }
 
+.blog-main .btn{
+	border-radius: 5px;
+	font-size: 5px;
+	border: solid black 1px;
+	background-color: #ffa600;
+	color: black
+}
+
+.blog-main .btn:hover{
+	color: black;
+}
+
 .blog-side{
     flex: 30%;
     margin: 50px;
@@ -651,25 +686,26 @@ ul :hover{
     text-align: justify;
 }
 
-form.example input[type=text] {
-	padding: 10px;
+.search input[type=text]{
+
+	padding: 8px;
+	border-radius: 15px;
 	font-size: 10px;
-	border: 1px solid grey;
-	float: left;
-	width: 80%;
-	background: #f1f1f1;
+	border: none;
+	width: 300px;
+	border: solid black 1px;
+
 }
 
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #867070;
-  color: white;
-  font-size: 10px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
+.search{
+
+	padding: 10px;
+	padding-left: 105px;
+	width: 10%;
+	flex: 20%;
+	transform: translateY(2px);
+	text-align: center;
+
 }
 
 .blog-side .img{
@@ -677,7 +713,8 @@ form.example button {
 }
 
 .img img{
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 	border-radius: 20px;
 	box-shadow: 10px 5px 5px #83764F;
 }
@@ -686,13 +723,13 @@ form.example button {
 /* FOOTER */
 
 .container{
-	max-width: 1170px;
+	max-width: 1100px;
 	margin: auto;
 }
 
 .footer{
-	background: #9CA777;
-	padding: 70px 0;
+	background: #2c2929;
+	padding: 50px 0;
 }
 
 .row{
@@ -707,7 +744,7 @@ form.example button {
 
 .footer-col h4{
 	font-size: 18px;
-	color: #2c2929;
+	color: white;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
@@ -724,14 +761,14 @@ form.example button {
 	width: 50px;
 }
 
-.footer-col ul{
+/* .footer-col ul{
 	list-style: none;
-}
+} */
 
 .footer-col ul li a{
 	font-size: 16px;
 	text-decoration: none;
-	color: #2c2929;
+	color: white;
 	display: block;
 	transition: all .3s ease;
 }
@@ -760,42 +797,6 @@ form.example button {
 	background-color: #ffa600;
 }
 
-.footer-col .btttn{
-	color: #9CA777;
-	background-color: #9CA777;
-	border: none;
-	border-radius: 10px;
-}
-
-.footer-col .btttn:hover{
-	color: #9CA777;
-	background-color: #263A29;
-}
-
-/* @media screen and(max-width: 350px){
-	.top-container{
-		flex-direction: column;
-		width: 50%;
-	}
-	.nav{
-		padding: 0px;
-		margin-top: 0px;
-		width: 20%;
-		font-size: 20px;
-	}
-	.search input[type=text]{
-		padding: 0%;
-		font-size: 10px;
-		border: 0;
-		width: 40px;
-		flex-direction: column;
-	}
-	#homepage{
-		font-size: 20px;
-		flex-direction: column;
-		text-align: center;
-	}
-} */
 
 @media screen and(max-width: 600px){
 	.furniturepage{
