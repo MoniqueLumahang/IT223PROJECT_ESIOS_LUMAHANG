@@ -3,11 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://kit.fontawesome.com/0900ce0ce0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="addtocart.js"></script>
+	<script type="text/javascript" src="cart.js"></script>
+	<script type="text/javascript" src="contactus.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
 	<title>M&L Furnishings</title>
 </head>
+
 <body>
 
 	<div class="top-container">
@@ -22,95 +27,238 @@
 
 		<div class="nav">
 
-			<nav>
+			<div class="-navlink">
+					
 				<ul>
-					<li><a href="#homepage">Home</a></li>
-					<li><a href="#furniturepage">Furnitures</a></li>
-					<li><a href="#aboutuspage">About Us</a></li>
-					<li><a href="#contactuspage">Contact Us</a></li>
-					<li><a href="#blogpage">Blog</a></li>
+					<li><a class="acive" href="#homepage">Home</a></li>
+					<li><a class="acive" href="#furniturepage">Furnitures</a></li>
+					<li><a class="acive" href="#aboutuspage">About Us</a></li>
+					<li><a class="acive" href="#blogpage">Blog</a></li>
+					<li><a class="acive" href="#contactuspage">Contact Us</a></li>
 					
 				</ul>
-			</nav>
+
+			</div>
 
 		</div>
 
-		<div class="search">
-			<input class="form-control" type="text" placeholder="Search...">
+		<div class="top-icons">
+
+
+			<div class="search-box">
+
+				<form>
+					<input type="text" name="" placeholder="Search">
+					<button><i class="fas fa-search"></i></button>
+				</form>
+
+			</div>
+
+
+			<div class="addtocart">
+
+			
+				<div class="cart-icon">
+					<span class="item-count">0</span>
+					<i class="fas fa-shopping-cart"></i>
+					
+
+				</div>
+
+				<div class="cart-window hide">
+					<h2>Shopping Cart</h2>
+
+					<div class="cart-wrapper">
+						<div class="cart-item">
+							<!-- <img>
+							<div class="details">
+								<h3>Item Name</h3>
+								<p>
+									<span class="quantity">Quantity:</span>
+									<span class="price">Price: </span>
+								</p>
+							</div>
+							<div class="cancel"><i class="fa-solid fa-xmark"></i></div> -->
+						</div>
+					</div>
+
+
+					<div class="subtotal">Subtotal: </div>
+					<div class="checkout">Check Out</div>
+					<div class="view-cart">View Cart</div>
+
+				</div>
+
+			</div>
+
+			<div class="menu">
+
+				<div><i class="fa fa-bars menu-icon"></i></div>
+
+				<div class="menu-window hide">
+
+					<ul>
+						<li><a class="acive" href="#homepage">Home</a></li>
+						<li><a class="acive" href="#furniturepage">Furnitures</a></li>
+						<li><a class="acive" href="#aboutuspage">About Us</a></li>
+						<li><a class="acive" href="#blogpage">Blog</a></li>
+						<li><a class="acive" href="#contactuspage">Contact Us</a></li>
+								
+					</ul>
+
+
+				</div>
+
+			</div>
+
 		</div>
-	
+
 	</div>
 
 	<section class="home" id="homepage">
 
-		<div id="home-content">
+		<div class="home-content">
 	
 			<h1>M&L Furnishings</h1>
 			<h3 class="h3">Everything your home deserves.</h3>
 			<p class="p">Welcome to M&L Furnishings! Where style meets comfort and functionality. We are dedicated to providing exquisite furniture pieces that enhance the beauty and functionality of your living spaces.</p>
 
+			<button class="home-btn"><a href="#aboutuspage">Learn More</a></button>
 
-			<button class="btn"><a href="#aboutuspage">Learn More</a></button>
-		
+
 		</div>
 	</section>
 
 	<section class="furniture" id="furniturepage">
 
-		<div class="furnitures-head">
-			<h1>Furnitures</h1>
+		<div class="heading">
+			<h1>FURNITURES</h1>
 		</div>
 
-		<div class="classifications">
-			<h1>CHAIR</h1>
+		<div class="classifications class1">
+
+			<div class="border"></div>
+			<div class="type"><h1>CHAIR</h1></div>
+			<div class="border"></div>
+
 		</div>
 
-		<div class="furniturepage">
+		<div class="furniturepage furniturepage1">
 			
-			<div class="furnitures">
-				<img class="img img1" src="sources/chair1.png" width="120px">
+			<div data-id = "1" class="furnitures">
+				<img class="img img1" src="sources/chair1.png">
 				<p class="p">Luna</p>
-				<s></s>₱5,999
+				<span class="price">₱5,999</span>
 				<span class="original">₱9,999</span>
 				<br>
 				<br>
-				<span><button class="cart">ADD TO CART</button></span>
+				<button class="cart">ADD TO CART</button>
 			</div>
 
-			<div class="furnitures">
-				<img class="img img2" src="sources/chair2.png" width="150px">
+			<div data-id = "2"  class="furnitures">
+				<img class="img img2" src="sources/chair2.png">
 				<p class="p">Vanessa</p>
-				<s></s> ₱10,499
+				<span class="price">₱10,499</span>
 				<span class="original">₱12,499</span> 
 				<br>
 				<br>
 				<span><button class="cart">ADD TO CART</button></span>
 			</div>
 
-			<div class="furnitures">
+			<div data-id = "3"  class="furnitures">
 				<img class="img img3" src="sources/chair3.png">
 				<p class="p">Cherry</p>
-				<s></s> ₱7,499
+				<span class="price">₱7,499</span>
 				<span class="original">₱9,899</span> 
 				<br>
 				<br>
 				<span><button class="cart">ADD TO CART</button></span>
 			</div>
 
-			<div class="furnitures">
+			<div data-id = "4"  class="furnitures">
 				<img class="img img4" src="sources/chair4.png">
 				<p class="p">Cassandra</p>
-				<s></s> ₱8,499
+				<span class="price">₱8,499</span>
 				<span class="original">₱9,499</span> 
 				<br>
 				<br>
 				<span><button class="cart">ADD TO CART</button></span>
 			</div>
 
-			<div class="furnitures">
+			<div data-id = "5"  class="furnitures">
 				<img class="img img5" src="sources/chair5.png">
 				<p class="p">Vanilla</p>
-				<s></s> ₱10,299
+				<span class="price">₱10,299</span>
+				<span class="original">₱13,299</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "6"  class="furnitures">
+				<img class="img img1" src="sources/chair6.png" width="120px">
+				<p class="p">Jane</p>
+				<span class="price">₱5,999</span>
+				<span class="original">₱9,999</span>
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "2"  class="furnitures">
+				<img class="img img2" src="sources/chair7.png">
+				<p class="p">Riza</p>
+				<span class="price">₱10,499</span>
+				<span class="original">₱12,499</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "3"  class="furnitures">
+				<img class="img img3" src="sources/chair8.png">
+				<p class="p">Odette</p>
+				<span class="price">₱7,499</span>
+				<span class="original">₱9,899</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "4"  class="furnitures">
+				<img class="img img4" src="sources/chair9.png">
+				<p class="p">Summer</p>
+				<span class="price">₱8,499</span>
+				<span class="original">₱9,499</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "5"  class="furnitures">
+				<img class="img img5" src="sources/chair10.png">
+				<p class="p">Monique</p>
+				<span class="price">₱10,299</span>
+				<span class="original">₱13,299</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "6"  class="furnitures">
+				<img class="img img1" src="sources/chair11.png">
+				<p class="p">Lailanie</p>
+				<span class="price">₱5,999</span>
+				<span class="original">₱9,999</span>
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div data-id = "5"  class="furnitures">
+				<img class="img img5" src="sources/chair12.png">
+				<p class="p">Wyn</p>
+				<span class="price">₱10,299</span>
 				<span class="original">₱13,299</span> 
 				<br>
 				<br>
@@ -120,16 +268,18 @@
 		</div>
 
 
-		<div class="classifications">
-			<h1>SOFA</h1>
+		<div class="classifications class2">
+			<div class="border"></div>
+			<div class="type"><h1>SOFA</h1></div>
+			<div class="border"></div>
 		</div>
 
-		<div class="furniturepage">
+		<div class="furniturepage furniturepage2">
 			
 			<div class="furnitures">
 				<img class="img img1" src="sources/sofa1.png">
 				<p class="p">Elizabeth</p>
-				<s></s>₱10,999
+				<span class="price">₱10,999</span>
 				<span class="original">₱14,999</span> 
 				<br>
 				<br>
@@ -139,7 +289,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/sofa2.png">
 				<p class="p">Georgia</p>
-				<s></s> ₱14,200
+				<span class="price">₱14,200</span>
 				<span class="original">₱16,300</span> 
 				<br>
 				<br>
@@ -149,7 +299,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/sofa3.png">
 				<p class="p">Margarita</p>
-				<s></s> ₱15,300
+				<span class="price">₱15,300</span>
 				<span class="original">₱17,300</span> 
 				<br>
 				<br>
@@ -159,7 +309,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/sofa4.png">
 				<p class="p">Angelita</p>
-				<s></s> ₱15,999
+				<span class="price">₱15,999</span>
 				<span class="original">₱17,999</span>
 				<br>
 				<br>
@@ -169,7 +319,77 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/sofa5.png">
 				<p class="p">Pauline</p>
-				<s></s> ₱16,999
+				<span class="price">₱16,999</span>
+				<span class="original">₱17,999</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa6.png">
+				<p class="p">Violet</p>
+				<span class="price">₱10,999</span>
+				<span class="original">₱14,999</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa7.png">
+				<p class="p">Lisa</p>
+				<span class="price">₱14,200</span>
+				<span class="original">₱16,300</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa8.png">
+				<p class="p">Grace</p>
+				<span class="price">₱15,300</span>
+				<span class="original">₱17,300</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa9.png">
+				<p class="p">Penelope</p>
+				<span class="price">₱15,999</span>
+				<span class="original">₱17,999</span>
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa10.png">
+				<p class="p">Clara</p>
+				<span class="price">₱16,999</span>
+				<span class="original">₱17,999</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa11.png">
+				<p class="p">Gail</p>
+				<span class="price">₱15,999</span>
+				<span class="original">₱17,999</span>
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/sofa12.png">
+				<p class="p">Zara</p>
+				<span class="price">₱16,999</span>
 				<span class="original">₱17,999</span> 
 				<br>
 				<br>
@@ -178,18 +398,18 @@
 
 		</div>
 
-
-
-		<div class="classifications">
-			<h1>MODERN CHAIRS</h1>
+		<div class="classifications class3">
+			<div class="border"></div>
+			<div class="type"><h1 class="h1">MODERN CHAIRS</h1></div>
+			<div class="border"></div>
 		</div>
 
-		<div class="furniturepage">
+		<div class="furniturepage furniturepage3">
 			
 			<div class="furnitures">
 				<img class="img img1" src="sources/mchair1.png">
 				<p class="p">Louis</p>
-				<s></s>₱10,999
+				<span class="price">₱10,999</span>
 				<span class="original">₱11,999</span> 
 				<br>
 				<br>
@@ -199,7 +419,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/mchair2.png">
 				<p class="p">Charlie</p>
-				<s></s> ₱9,899
+				<span class="price">₱9,899</span>
 				<span class="original">₱10,899</span> 
 				<br>
 				<br>
@@ -209,7 +429,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/mchair3.png">
 				<p class="p">Suzy</p>
-				<s></s> ₱11,299
+				<span class="price">₱11,299</span>
 				<span class="original">₱13,299</span> 
 				<br>
 				<br>
@@ -219,7 +439,7 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/mchair4.png">
 				<p class="p">Isabelle</p>
-				<s></s> ₱13,999
+				<span class="price">₱13,999</span>
 				<span class="original">₱15,799</span> 
 				<br>
 				<br>
@@ -229,7 +449,77 @@
 			<div class="furnitures">
 				<img class="img img1" src="sources/mchair5.png">
 				<p class="p">Maureen</p>
-				<s></s> ₱10,699
+				<span class="price">₱10,699</span>
+				<span class="original">₱12,500</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair6.png">
+				<p class="p">Hannah</p>
+				<span class="price">₱10,999</span>
+				<span class="original">₱11,999</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair7.png">
+				<p class="p">Yesha</p>
+				<span class="price">₱9,899</span>
+				<span class="original">₱10,899</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair8.png">
+				<p class="p">Sab</p>
+				<span class="price">₱11,299</span>
+				<span class="original">₱13,299</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair9.png">
+				<p class="p">Rufa</p>
+				<span class="price">₱13,999</span>
+				<span class="original">₱15,799</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair10.png">
+				<p class="p">Natasha</p>
+				<span class="price">₱10,699</span>
+				<span class="original">₱12,500</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair11.png">
+				<p class="p">Fairy</p>
+				<span class="price">₱13,999</span>
+				<span class="original">₱15,799</span> 
+				<br>
+				<br>
+				<span><button class="cart">ADD TO CART</button></span>
+			</div>
+
+			<div class="furnitures">
+				<img class="img img1" src="sources/mchair12.png">
+				<p class="p">Mina</p>
+				<span class="price">₱10,699</span>
 				<span class="original">₱12,500</span> 
 				<br>
 				<br>
@@ -237,211 +527,416 @@
 			</div>
 
 		</div>
+
+
 	</section>
 
 	<section class="aboutus" id="aboutuspage">
-		<div class="aboutus-head">
-			<h1>About M&L Furnishings</h1>
-		</div>
-	
-		<div class="aboutus-row">
 
-			<div class="aboutus-side">
-				<h2 class="h2">We create furnitures that are both fasionable and useful.</h2>
-				<p class="p">We work hard to produce items that will add beauty and comfort to your home while still giving you a lot for the price you pay. Each piece we produce must meet to the highest standards of quality and craftsmanship, which are constantly being raised by our team of skilled designers, engineers, and craftsmen. We are proud of our dedication to excellence in all aspects of what we do.</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<img src="sources/15.jpg" alt="15">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<h2 class="h">We provide pieces that can create memories with.</h2>
-				<p class="pp">Furniture is an essential part of any home, and it should be chosen with great care. Excellent furniture can bring a lot of comfort and style to your home, while also increasing its value. With the right kind of furniture, you can create a beautiful and inviting atmosphere in your home. Whether you are looking for traditional or modern furniture, there are many excellent options available that will help you create the perfect look for your home.</p>
-			</div>
-	
-			<div class="aboutus-main">
-				<img id="main-first" src="sources/16.jpg" alt="16">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<h2 class="h2">We are passionate about providing our customers with the highest quality products.</h2>
-				<p class="p">Our team of experienced professionals has been hand-selected to ensure that each piece is crafted with care and attention to detail. From classic, timeless designs to contemporary pieces, we have something for everyone. With an emphasis on sustainability and quality craftsmanship, M&L Furnishings is committed to providing our customers with the best possible experience.</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<img id="main-second" src="sources/17.jpg" alt="17">
-			</div>
-	
-		</div>
-	</section>
+		<div class="heading">
 
-	<section class="contactus" id="contactuspage">
+			<h1>ABOUT M&L FURNISHINGS</h1>
 
-		<div class="contactus-head">
-			<h1>Contact Us</h1>
-		</div>
+		</div>	
 
-		<div class="contactus-row">
+			<div class="content">
+				
+				<div class="context">
 
-			<div class="contactus-left-side">
-				<h2>HELLO!</h2>
-				<br>
-				<br>
-				<p class="p">Are you looking for the perfect piece of furniture to complete your home? At M&L Furnishings, we are passionate about helping our customers find the perfect piece of furniture to match their style, budget and needs. Whether you're looking for a new sofa, bed or dining table, we have something for everyone.</p>
-				<br>
-				<br>
-				<p class="pp">If you have any questions or would like more information about our products, please don’t hesitate to contact us. Our friendly team is always happy to help and answer any questions you may have.</p>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-			<div class="contactus-left-side">
-				<a href="#"><i class="fa fa-phone" aria-hidden="true"> SMS:  09090909090 / 09123456789</i></a>
-				<a href="#"><i class="fa fa-envelope" aria-hidden="true"> EMAIL:    mlfurnishings_@gmail.com</i></a>
-				<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"> FACEBOOK:    M&LFurnishings Official</i></a>
-				<a href="#"><i class="fab fa-instagram" aria-hidden="true"> INSTAGRAM:   @_m&lfurnishings_</i></a>
-			</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<h3 class="h3">Sponsorship and Collaborations</h3>
-				<br>
-				<br>
-				<p class="ppp">Do you have a creative idea that relates to our work or our passions? We are thrilled to talk about it! Express your ideas to @m&lfurnishings.ph</p>
-				<br>
-				<br>
-				<h2 class="h2h2">You're now one step closer to receiving answers and solutions. Please let us know how we can assist you!</h2>
-			</div>
-	
-			<div class="contactus-right-side">
-
-				<div class="contactus-fullname">
-					<input class="form-control" type="text" placeholder="Fullname">	
-				</div>
-	
-				<div class="contactus-email">
-					<input class="form-control" type="text" placeholder="email">	
-				</div>
-	
-				<div class="contactus-contact">
-					<input class="form-control" type="text" placeholder="contact">
-				</div>
-	
-				<div class="contactus-message">
-					<input class="form-control" id="message" type="text" placeholder="message / feedback">
-				</div>
-				<div class="contactus-submit">
-					<button class="submit">submit</button>
-				</div>
-			
-			</div>
-	
-		</div>
-	</section>
-
-	<section class="blognavpage" id="blogpage">
-
-		<div class="blog-head">
-			<h1>Blog</h1>
-		</div>
-
-        <div class="blogpage">
-
-           	<div class="blog-top-container">
-   			</div>
-
-
-            <div class="blog">
-
-            	<div class="blog-main">
-            		<h4>Introducing M&L Furnishings: Elevating Your Home with Timeless Elegance</h4>
-
-		            <p class="p p1"> Welcome to M&L Furnishings, your one-stop destination for exquisite home furnishings. Our store is dedicated to transforming houses into homes by offering a carefully curated selection of furniture pieces that exude timeless elegance and unparalleled craftsmanship.</p>
-
-		            <p class="p p2">At M&L Furnishings, we understand the significance of furniture in creating a comfortable and stylish living space. Whether you're looking to revamp your entire home or searching for that perfect accent piece, our extensive collection has something to suit every taste and preference.</p>
-		                
-		            <p class="p p3">Quality is at the heart of what we do. We believe that furniture should not only be visually appealing but also built to last. That's why we source our products from renowned manufacturers known for their dedication to craftsmanship and attention to detail. From sturdy hardwood frames to luxurious upholstery, each piece in our store is chosen with utmost care to ensure lasting beauty and functionality.</p>
-		                
-		            <p class="p p4">Our range of furniture covers every room in your home. Discover our stunning living room collection, featuring plush sofas, elegant coffee tables, and statement accent chairs that will effortlessly elevate your space. For the dining area, explore our exquisite dining sets that combine style and functionality, creating the perfect setting for memorable gatherings with loved ones.</p>
-					<br>
-					<br>
-					<button class="btn"><a href="##">read more</a></button>
-            	</div>
-
-	       		<div class="blog-side">
-
-		            <div>
-
-		            	<form class="example" action="action_page.php">
-
-							<div class="search">
-								<input class="form-control" type="text" placeholder="Search...">
-							</div>
-						</form>
-
-		            </div>
-
-					<div class="img">
-						<img src="sources/blog1.jpg" height="250px" width="300px">
+					<div class="in-content">
+						<h2 class="h2">We create furnitures that are both fasionable and useful.</h2>
+						<br>
+						<p class="pp">We work hard to produce items that will add beauty and comfort to your home while still giving you a lot for the price you pay. Each piece we produce must meet to the highest standards of quality and craftsmanship, which are constantly being raised by our team of skilled designers, engineers, and craftsmen. We are proud of our dedication to excellence in all aspects of what we do.</p>
 					</div>
 
-		        </div>
-	        </div>
-        </div>
-    </section>
-	
+					<div class="image image1"><img src="sources/15.jpg" alt="15" height="300px" width="350px"></div>
 
-	<section class="footer" id="footer">
-
-		<div class="footer-row">
-			<div class="footer-col">
-				<h4>Links</h4>
-		
-				<li><a href="#furniturepage">Furnitures</a></li>
-				<li><a href="#aboutuspage">About Us</a></li>
-				<li><a href="#contactuspage">Contact Us</a></li>
-				<li><a href="#blogpage">Blog</a></li>
-				<br>
-				<a href="#homepage"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-			
-			</div>
-				
-			<div class="footer-col">
-				<h4>Get Help</h4>
-				
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Returns</a></li>
-				<li><a href="#">Order Status</a></li>
-				<li><a href="#">payment Option</a></li>
-		
-			</div>
-
-			<div class="footer-col">
-				<h4>Follow Us</h4>
-				<div class="icons">
-					<li><a href="#"><i class="fab fa-facebook-f"></i>@M&LFurnishingsOfficial</a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i>@M&LFurnishingsOfficial</a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i>@M&LFurnishingsOfficial</a></li>
 				</div>
-			
+
+				<div class="context">
+
+					<div class="in-content">
+						<h2 class="h2">We provide pieces that can create memories with.</h2>
+						<br>
+						<p class="pp">Furniture is an essential part of any home, and it should be chosen with great care. Excellent furniture can bring a lot of comfort and style to your home, while also increasing its value. With the right kind of furniture, you can create a beautiful and inviting atmosphere in your home. Whether you are looking for traditional or modern furniture, there are many excellent options available that will help you create the perfect look for your home.</p>
+					</div>
+
+					<div class="image image2"><img src="sources/16.jpg" alt="16" height="300px" width="350px"></div>
+
+				</div>
+
+				<div class="context">
+
+					<div class="in-content">
+						<h2 class="h2">We are passionate about providing our customers with the highest quality products.</h2>
+						<br>
+						<p class="pp">Our team of experienced professionals has been hand-selected to ensure that each piece is crafted with care and attention to detail. From classic, timeless designs to contemporary pieces, we have something for everyone. With an emphasis on sustainability and quality craftsmanship, M&L Furnishings is committed to providing our customers with the best possible experience.</p>
+					</div>
+
+					<div class="image image3"><img src="sources/17.jpg" alt="17" height="300px" width="350px"></div>
+
+				</div>
+
 			</div>
 
-		</div>
-
-		
 		
 	</section>
+
+
+	<section class="blogpage" id="blogpage">
+
+		<div class="heading">
+
+			<h1>BLOGS</h1>
+
+		</div>
+		
+		<div class="whole-blog">
+
+			<div class="blog">
+
+				<div class="inside-blog blog1">
+
+					<img src="sources/blogs1.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>June 19, 2023</p>
+					<h3>DESIGNING YOUR OUTDOOR OASIS</h3>
+					<p class="pcontent">Designing Your Outdoor Oasis: Discover Bliss in Your Backyard.</p>
+
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/design-your-outdoor-oasis-with-patio-furniture.html">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="inside-blog blog2">
+
+					<img src="sources/blogs2.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>February 18, 2022</p>
+					<h3>POPULAR OFFICE DESKS</h3>
+					<p class="pcontent">Discover Popular Office Desks: Stylish, Functional, and Productivity-Boosting.</p>
+
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/6-best-daybeds-2022.html">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="inside-blog blog3">
+
+					<img src="sources/blogs3.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>October 20, 2010</p>
+					<h3>WHITE FURNITURE TREND</h3>
+					<p class="pcontent">White Furniture Trend: Timeless Elegance for Modern Interiors</p>
+					
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/white_furniture_trend.html">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="inside-blog blog4">
+
+					<img src="sources/blogs4.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>November 2, 2018</p>
+					<h3>LEATHER OR FABRIC</h3>
+					<p class="pcontent">Leather or Fabric: Choosing the Perfect Upholstery for Your Space</p>
+
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/leather_vs_fabric_sofa.html">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="inside-blog blog5">
+
+					<img src="sources/blogs5.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>November 8, 2022</p>
+					<h3>WHY BUY YOUR BED ONLINE?</h3>
+					<p class="pcontent">Why Buy Your Bed Online: Convenience, Variety, and Quality</p>
+					
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/key-reasons-for-buying-bed-online.html">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="inside-blog blog6">
+
+					<img src="sources/blogs6.jpg">
+					<p class="pdate"><i class="fa-solid fa-calendar-days"></i>February 12, 2022</p>
+					<h3>OTTOMAN AND WAYS TO USE THEM</h3>
+					<p class="pcontent">Ottomans: Versatile and Creative Uses for Stylish Comfort</p>
+					
+					<div class="blog-links">
+						<a target="_blank" href="https://www.comfyco.com/articles/ottomans-and-how-to-use-them.html">Read More</a>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class="blog-side">
+
+				<div class="blog-search">
+
+					<form>
+						<input type="text" name="" placeholder="Search">
+
+						<button><i class="fas fa-search"></i></button>
+					</form>
+
+				</div>
+
+				<div class="blog-follow-us">
+
+					<div class="follow-us">
+						<h5>FOLLOW US</h5>
+					</div>
+
+					<div class="followus-icons">
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href=""><i class="fa-brands fa-twitter"></i></a>
+					</div>
+					
+				</div>
+
+				<div class="blog-articles">
+
+					<div class="other">
+
+						<h4>OTHER ARTICLES</h4>
+						
+					</div>
+
+					<div class="articles">
+						
+						<div class="articles-img">
+
+							<img src="sources/blogs7.jpg">
+							
+						</div>
+						
+						<div class="articles-deets">
+							<a target="_blank" href="comfyco.com/articles/how-much-space-should-furniture-take.html">How much space should furniture take?</a>
+						</div>
+
+					</div>
+
+					<div class="articles">
+						
+						<div class="articles-img">
+
+							<img src="sources/blogs8.jpg">
+							
+						</div>
+						
+						<div class="articles-deets">
+							<a target="_blank" href="https://www.comfyco.com/articles/furniture-delivery-new-jersey.html">Furniture Delivery</a>
+						</div>
+
+					</div>
+
+					<div class="articles">
+						
+						<div class="articles-img">
+
+							<img src="sources/blogs9.jpg">
+							
+						</div>
+						
+						<div class="articles-deets">
+							<a target="_blank" href="https://www.comfyco.com/articles/how-to-use-patterns.html">How to use patterns in interior design?</a>
+						</div>
+
+					</div>
+
+					<div class="articles">
+						
+						<div class="articles-img">
+
+							<img src="sources/blogs10.jpg">
+							
+						</div>
+						
+						<div class="articles-deets">
+							<a target="_blank" href="https://www.comfyco.com/articles/best-colors-for-your-bedroom.html">Best color combinations for your bedroom</a>
+						</div>
+
+					</div>
+
+					<div class="articles">
+						
+						<div class="articles-img">
+
+							<img src="sources/blogs11.jpg">
+							
+						</div>
+						
+						<div class="articles-deets">
+							<a target="_blank" href="https://www.comfyco.com/articles/8-popular-fabric-sofas-2022.html">8 Best Fabric Sofas 2022</a>
+						</div>
+
+					</div>
+
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</section>
+
+	<section class="contactuspage" id="contactuspage">
+
+		<div class="heading">
+			<h1>CONTACT US</h1>
+		</div>
+
+    		<div class="contactus-container">
+
+    			<div class="contactus-left">
+
+					<h2>HELLO!</h2>
+			
+					<p class="p">Are you looking for the perfect piece of furniture to complete your home? At M&L Furnishings, we are passionate about helping our customers find the perfect piece of furniture to match their style, budget and needs. Whether you're looking for a new sofa, bed or dining table, we have something for everyone.</p>
+					
+					<p class="p">If you have any questions or would like more information about our products, please don't hesitate to contact us. Our friendly team is always happy to help and answer any questions you may have.</p>
+
+	    			<div class="container">
+
+	    				<div class="team">
+		    				<h1>OUR TEAM</h1>
+		    			</div>
+
+		    			<div class="our-team">
+		    
+		    				<div class="member member1">
+		    					<img src="sources/monique.jpg">
+		    					<p class="membername">Monique R. Lumahang</p>
+		    				
+		    					<p>lumahang.monique@gmail.com</p>
+		    				</div>
+
+		    				<div class="member member2">
+		    					<img src="sources/langga.jpg">
+		    					<p class="membername">Lailanie D. Esios</p>
+		    	
+		    					<p>esios.lailaniejoy@gmail.com</p>
+		    					
+		    				</div>
+
+		    			</div>
+	    			</div>
+
+    				
+    			</div>
+
+				<div class="forms">
+
+					<div>
+						<h1 class="concerns">LET US KNOW YOUR CONCERNS.</h1>
+					</div>
+
+					<div class="form-control">
+
+						<label for="fullname">Full Name</label> 
+						<input class="fullname" id="fullname" type="text" name="" placeholder="Fullname">
+						
+						<label for="email">Email</label> 
+						<input class="email" id="email" type="text" name="" placeholder="Email">
+						
+						<label for="phone">Contact Number</label> 
+						<input class="phone" id="phone" type="text" name="" placeholder="Phone">
+						<br>
+					
+						<label for="feedback">Tell us your thoughts about our website.</label> 
+						<input class="feedback" id="feedback" type="text" name="" placeholder="Message and feedback.">
+						<button class="submit-btn">Submit</button>
+					</div>
+
+					<div class="response">
+						<p>Thank you, [User's Name], for reaching out to us!
+
+						Dear [User's Name],
+
+						Thank you for contacting M&L Furnishings! We appreciate your interest and are here to address any questions or concerns you may have about our furniture products. Our dedicated team is committed to providing exceptional service and helping you make informed decisions. Please share your specific inquiries, and we'll promptly assist you.
+
+						Warm regards,
+						M&L Furnishings</p>
+					</div>
+
+						
+				</div>
+
+				
+				
+			</div>
+
+    		
+    		<div class="contactus-content">
+
+    			<div class="contactus"><p><i class="fa-solid fa-phone"></i>09999999999</p></div>
+    			<div class="contactus"><p><i class="fa-solid fa-envelope"></i>mnlfurnishings@gmail.com</p></div>
+    			<div class="contactus"><p><i class="fa-brands fa-facebook"></i>mnl_furnishings official</p></div>
+    			<div class="contactus"><p><i class="fa-brands fa-instagram"></i>@mnl_furnishings</p></div>
+    			<div class="contactus"><p><i class="fa-brands fa-twitter"></i>@mnl_furnishings</p></div>
 	
+    		</div>
+
+	</section>
+
+
+	 <section class="footer" id="footer">
+
+      <div class="footer-row">
+
+        <div class="footer-col">
+          <h4 class="footerClick">Links</h4>
+          <ul>
+            <li><a href="#furniturepage">Furnitures</a></li>
+            <li><a href="#aboutuspage">About Us</a></li>
+            <li><a href="#contactuspage">Contact Us</a></li>
+            <li><a href="#blogpage">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footerClick">Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">payment Option</a></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footerClick">Follow Us</h4>
+          <ul class="icons">
+            <li>
+              <a href="#"
+                ><i class="fab fa-facebook-f"></i>@M&LFurnishingsOfficial</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram"></i>@M&LFurnishingsOfficial</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-twitter"></i>@M&LFurnishingsOfficial</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
 </body>
 </html>
